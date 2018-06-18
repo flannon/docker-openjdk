@@ -1,13 +1,14 @@
 
 FROM openshift/base-centos7
 
-run yum -y update && yum install -y --enablerepo=updates \
+RUN yum -y update && yum install -y --enablerepo=updates \
     yum-utils \
     bzip2 \
     unzip \
     xz-utils && \
-    java-1.8.0-openjdk \
     rm -rf /var/cache/yum && yum clean all -y
+
+RUN yum install -y java-1.8.0-openjdk 
 
 # Default to UTF-8 file.encoding
 ENV LANG C.UTF-8
