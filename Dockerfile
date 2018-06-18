@@ -1,7 +1,7 @@
 
 FROM openshift/base-centos7
 
-run yum -y update && yum install -y --enable-repo=updates \
+run yum -y update && yum install -y --enablerepo=updates \
     yum-utils \
     bzip2 \
     unzip \
