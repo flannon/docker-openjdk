@@ -6,7 +6,7 @@ run yum -y update && yum install -y --enablerepo=updates \
     bzip2 \
     unzip \
     xz-utils && \
-    java-1.8.0-openjdk.x86_64 \
+    java-1.8.0-openjdk \
     rm -rf /var/cache/yum && yum clean all -y
 
 # Default to UTF-8 file.encoding
