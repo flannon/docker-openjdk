@@ -52,3 +52,4 @@ ENV CA_CERTIFICATES_JAVA_VERSION 20170531+nmu1
 # improved, please open an issue or a pull request so we can discuss it!
 #
 #   https://github.com/docker-library/openjdk/issues
+ USER 1001
